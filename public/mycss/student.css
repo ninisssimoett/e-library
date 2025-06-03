@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f7f8fc;
+    color: #333;
+}
+
+.navbar {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .hero-background {
+    height: 135vh;
+    width: 100vw;
+    background-image: url('../purple/assets/hero-img.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 37%; /* Atur ini sesuai seberapa kebawah kamu mau tombolnya */
+    right: 1%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .hero-button {
+    padding: 1rem 2rem; /* Dibuat lebih besar */
+    border: none;
+    border-radius: 9999px;
+    background-color: #FF9149; /* ganti sesuai tema kamu */
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* ini penting untuk hilangin garis bawah */
+
+  }
+  
+  .hero-button:hover {
+    background-color: #f78336; /* efek hover */
+  }
+  
+  
+  
+
+
+
+.bg-purple {
+    background-color: #FF9149;
+    color: white;
+}
+
+.btn-purple {
+    background-color: #FF9149;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.btn-purple:hover {
+    background-color: #FF9149;
+}
+
+.card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+header {
+    background: #AFDDFF;
+    padding: 20px 0;
+    color: white;
+}
+
+header .navbar-brand {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* Batasin tinggi navbar */
+.navbar {
+    height: 50px; /* sesuaikan jika perlu */
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Bungkus logo agar tidak bikin tinggi navbar nambah */
+  .logo-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Gambar logo responsive dan nggak over-stretch */
+  .logo-img {
+    max-height: 100%;
+    width: auto;
+  }
+  
+
+
+
+/* End Header */
+
+
+/* detail */
+.text-purple {
+    color: #FF9149;
+}
+
+
+.bg-purple {
+    background-color: #FF9149 !important;
+    color: white;
+}
+
+
+.btn-purple {
+    background-color: #FF9149;
+    color: white;
+    border-radius: 6px;
+}
+
+
+.btn-purple:hover {
+    background-color: #FF9149;
+    color: white;
+}
+
+/* end detail */
+
+
+/* Footer */
+footer {
+    background: #FF9149;
+    color: #bbb;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+
+footer h5 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+footer a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+
+footer a:hover {
+    color: #fff;
+}
+
+/* End Footer */
+
+
+/* all book */
+.scrolling-wrapper {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.scrolling-wrapper>a {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    text-decoration: none;
+}
+
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* End all book */
+
+
+/* Responsif khusus tambahan */
+@media (max-width: 768px) {
+
+
+    h1,
+    .display-1,
+    .display-2,
+    .display-3,
+    .display-4,
+    .display-5 {
+        font-size: 1.8rem !important;
+    }
+
+
+    .lead {
+        font-size: 1rem;
+    }
+
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 1rem;
+    }
+
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+}
+
+
+.btn-blue {
+    background-color: #60B5FF; /* biru */
+    color: white;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn-blue:hover {
+    background-color: #60B5FF;
+    color: white;
+}
+
+.text-primary {
+    color: #60B5FF !important;
+}
+
+
+.search-button {
+    margin-left: 10px; /* bebas atur, misal 10px */
+}
+
+.bg-primary {
+    background-color: #AFDDFF !important;
+    color: white;
+}
+
+
+.footer-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-subtext {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+  }
+  
+  .footer-container-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 0 1rem;
+    text-align: left; /* default agar isi kolom kiri */
+  }
+  
+  .footer-column {
+    max-width: 300px;
+  }
+  
+  .footer-column h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  
+  .footer-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-nav-list li {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-nav-list a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  
+  .footer-nav-list a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+
+  .logout-btn {
+    background-color: #ffffff; /* warna background (putih) */
+    border: 2px solid #ddd;    /* garis luar */
+    border-radius: 50%;        /* bulat */
+    padding: 5px;              /* ruang di dalam */
+    transition: all 0.3s ease; /* animasi halus */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logout-btn:hover {
+    background-color: #f8d7da; /* warna hover (merah muda) */
+    border-color: #FF9149;     /* warna border saat hover */
+  }
+  .logout-btn img {
+    width: 20px;
+    height: 20px;
+  }
+
+  
+  .logout-button {
+    background-color: #ffffff;        /* warna dasar putih */
+    color: #FF9149;                   /* warna teks merah (bisa disesuaikan) */
+    padding: 6px 16px;                /* ruang di dalam tombol */
+    border: 2px solid #FF9149;        /* border merah */
+    border-radius: 10px;              /* biar ujungnya nggak tajam */
+    font-weight: bold;                /* tulisan tebal */
+    text-decoration: none;           /* hapus underline */
+    transition: all 0.3s ease;        /* animasi saat hover */
+  }
+  
+  .logout-button:hover {
+    background-color: #FF9149;        /* warna hover merah */
+    color: #ffffff;                   /* teks jadi putih pas hover */
+  }
+  
+  .logo-img {
+    height: 40px;      /* ubah ini sesuai kebutuhan, misalnya 50px, 60px */
+    width: auto;       /* biar rasio tetap terjaga */
+    object-fit: contain;
+    display: block;    /* pastikan gak ngikutin line height */
+    padding: 0;        /* hilangin padding bawaan */
+    margin: 0;         /* hilangin margin juga */
+  }
+
+  .navbar {
+    min-height: 60px;         /* atur sesuai tinggi ideal */
+    align-items: center;      /* biar logo dan item lain sejajar tengah */
+  }
+  
